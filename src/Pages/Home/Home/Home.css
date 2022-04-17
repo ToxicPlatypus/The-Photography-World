@@ -1,0 +1,25 @@
+.home-img img {
+  width: 400px;
+  width: 100%;
+  margin-top: 12px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.home-img {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 576px) {
+  .home-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .home-img {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
