@@ -14,7 +14,7 @@ const Home = () => {
       <Banner></Banner>
       <Service></Service>
       <h1> Photos Gallery</h1>
-      <div className="home-img">
+      <div id="gallery" className="home-img">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
         <img src={image3} alt="" />

@@ -19,11 +19,11 @@ const Header = () => {
             <Nav.Link as={Link} to="/about">
               About
             </Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="home#services">Services</Nav.Link>
             <NavDropdown title="Images" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Wedding</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Street</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">WildLife</NavDropdown.Item>
+              <NavDropdown.Item href="home#gallery">Wedding</NavDropdown.Item>
+              <NavDropdown.Item href="home#gallery">Street</NavDropdown.Item>
+              <NavDropdown.Item href="home#gallery">WildLife</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
