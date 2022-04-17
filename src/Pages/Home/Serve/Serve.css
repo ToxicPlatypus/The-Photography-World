@@ -7,6 +7,11 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
   text-align: center;
+  padding: 5px;
+}
+
+.serve h4 {
+  color: blueviolet;
 }
 
 .btn {
@@ -20,13 +25,11 @@
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
-  margin: 0;
+  margin-top: 3rem;
   min-height: 3rem;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
@@ -35,8 +38,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .btn:hover,

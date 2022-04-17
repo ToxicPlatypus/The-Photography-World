@@ -1,21 +1,42 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../../../Images/Logo/camera.png";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <img src={logo} height="30px" alt="" />
+    <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand as={Link} to="/" href="#home">
+          <img src={logo} height="40px" alt="" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              About
+            </Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavDropdown title="Images" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Wedding</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Street</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">WildLife</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
-        </Container>
-      </Navbar>
-    </div>
+          <Nav>
+            <Nav.Link as={Link} to="/blog">
+              Blog
+            </Nav.Link>
+            <Nav.Link eventKey={2} as={Link} to="/login">
+              Login
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
