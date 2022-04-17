@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "625bcdd2a64043fbcaaa04f3",
+    "price": "$184",
+    "image": "https://i.ibb.co/JtyvDcg/wildlife.jpg",
+    "name": "Wild Life Photography",
+    "description": "Wildlife photography is a popular genre of photography, done by beginners, enthusiasts, and professionals alike. Technically speaking, it involves shooting any type of animal (from birds to insects to butterflies to mammals). But wildlife photographers most commonly photograph mammals, reptiles, amphibians, and birds."
+  },
+  {
+    "_id": "625bcdd2f7e82c2e249aa7b8",
+    "price": "$120",
+    "image": "https://i.ibb.co/tJCZQpY/street.jpg",
+    "name": "Street Photography",
+    "description": "Street photography, a genre of photography that records everyday life in a public place. The very publicness of the setting enables the photographer to take candid pictures of strangers, often without their knowledge."
+  },
+  {
+    "_id": "625bcdd2928d0ac9ba177dd9",
+    "price": "$306",
+    "image": "https://i.ibb.co/0mLM1mG/weeding.jpg",
+    "name": "Wedding Photography",
+    "description": "Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings. It may include other types of portrait photography of the couple before the official wedding day, such as a pre-wedding engagement session (photographs are later used for the couple wedding invitations). "
+  }
+]
