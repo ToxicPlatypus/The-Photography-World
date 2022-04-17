@@ -8,10 +8,18 @@ const Register = () => {
   const navigateLogin = (event) => {
     navigate("/login");
   };
+
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+  };
+
   return (
     <div className="registration-form">
       <h1 className="reg-text">Registration Form</h1>
-      <form>
+      <form onSubmit={handleRegister}>
         <input type="text" name="name" placeholder="Your Name" required />
 
         <input type="email" name="email" placeholder="Email Address" required />
