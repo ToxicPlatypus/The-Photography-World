@@ -7,8 +7,8 @@ This project was an assignment from programming hero.
 Github Repo Link
 Open [This Link](https://github.com/programming-hero-web-course-4/independent-service-provider-ToxicPlatypus) to go to the github repository.
 
-Live Server Link
-Open [This Link](https://github.com/programming-hero-web-course-4/independent-service-provider-ToxicPlatypus) to see the live server.
+FireBase Live Server Link
+Open [This Link](https://photography-assignment.web.app/) to see the live server.
 
 ## Learn More
 
