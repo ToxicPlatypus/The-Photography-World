@@ -47,7 +47,7 @@ const Login = () => {
   };
 
   const resetPassword = () => {
-    toast("please enter email address");
+    toast("Password reseting is processing");
   };
 
   return (
