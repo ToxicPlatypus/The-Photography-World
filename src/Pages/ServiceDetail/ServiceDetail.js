@@ -7,7 +7,7 @@ const ServiceDetail = () => {
   const { serviceId } = useParams();
   return (
     <div>
-      <img className="w-50 mt-4" src={thanks} alt="" />
+      <img className="w-25 mt-4" src={thanks} alt="" />
       <div className="text-center w-25 mx-auto">
         <Link to="/checkout">
           <button className="btn btn-success">Proceed Checkout</button>
