@@ -10,7 +10,8 @@
   padding-left: 10px;
   font-size: 16px;
   margin-bottom: 15px;
-  border: 1px solid cadetblue;
+  border: 1px solid lightslategrey;
+  border-radius: 12px;
 }
 
 .reg-text {
