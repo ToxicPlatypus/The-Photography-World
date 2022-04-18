@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import auth from "../../firebase.init";
+import SocialLogin from "./SocialLogin/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -11,6 +12,8 @@ const Login = () => {
 
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
+
+  let errorElement;
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
@@ -27,6 +30,10 @@ const Login = () => {
     navigate(from, { replace: true });
   }
 
+  if (error) {
+    errorElement = <p className="text-danger">Error: {error?.message}</p>;
+  }
+
   const navigateRegister = (event) => {
     navigate("/register");
   };
@@ -38,20 +45,15 @@ const Login = () => {
         <br />
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
             <Form.Control
               ref={emailRef}
               type="email"
               placeholder="Enter email"
               required
             />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
             <Form.Control
               ref={passwordRef}
               type="password"
@@ -59,16 +61,17 @@ const Login = () => {
               required
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Group className="mb-1" controlId="formBasicCheckbox">
             <Form.Check
               type="checkbox"
               label="I accept the terms and services"
             />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Submit
+            Login
           </Button>
         </Form>
+        {errorElement}
         <p>
           New here?{" "}
           <Link
@@ -79,6 +82,8 @@ const Login = () => {
             Please Register
           </Link>
         </p>
+
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   );
