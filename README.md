@@ -4,10 +4,6 @@ This project was an assignment from programming hero.
 
 ## Github Link and Live server Link
 
-In the project directory, you can run:
-
-### `npm start`
-
 Github Repo Link
 Open [This Link](https://github.com/programming-hero-web-course-4/independent-service-provider-ToxicPlatypus) to go to the github repository.
 
